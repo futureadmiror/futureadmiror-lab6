@@ -7,13 +7,13 @@ public class TypeB extends Thing{
     this.lab = 'b';
     }
     
-
+    //has to have rand from dot
     public void maybeTurn(Random rand) {
         timeSinceLast++;
         if( timeSinceLast == 10){
             timeSinceLast = 0;
             int i = rand.nextInt(3);
-
+            
             if (i == 1) {
             this.rightTurn();
             }
