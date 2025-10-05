@@ -28,18 +28,14 @@ import java.util.*;
         head = null;
     }
 
-    /// adds a song to the catalog
-    ///@param song:the song being added to the catalog
     public void addThing(Thing thing) {
-        //turns song into a CatalogItem to be added to the Catalog
         Node append = new Node(thing);
-        //checks if there are no songs in the catalog
+ 
         if(head == null){
             head = append;
             count++;
         }
-        //makes an iteraor to traverse throguh the catalog and adds the song to the last element and points the last element to null
-        //increments counter by one
+  
         else{
             Node it = head;
             while(it != null && it.next != null){
